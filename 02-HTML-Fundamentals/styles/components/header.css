@@ -1,0 +1,43 @@
+.header {
+    border:  1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem
+}
+
+.header__logo {
+    width: var(--size-7xl);
+    height: var(--size-7xl);
+    object-fit: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.header__bars {
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    color: var(--clr-slate50);
+}
+
+/*XS*/
+/* @media (min-width: 475px) {}  */
+
+/*SM*/ 
+/* @media (min-width: 640px) {} */
+
+/*MD*/
+@media (min-width: 768px) {
+    .header__bars {
+        display: none;
+    }
+}  
+
+/*LG*/ 
+/* @media (min-width: 1024px) {}  */
+
+/*XL*/
+/* @media (min-width: 1280px) {}  */
+
+/*2XL*/ 
+/* @media (min-width: 1536px) {}  */
