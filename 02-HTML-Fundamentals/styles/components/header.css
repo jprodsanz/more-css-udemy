@@ -23,6 +23,10 @@
     color: var(--clr-slate50);
 }
 
+    .header__social {
+        text-decoration: none;
+    }
+
 /*XS*/
 /* @media (min-width: 475px) {}  */
 
@@ -33,6 +37,23 @@
 @media (min-width: 768px) {
     .header__bars {
         display: none;
+    }
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+    }
+    .header__social {
+        font-size: var(--size-lg);
+        color: var(--clr-slate50);
+        padding: 0.5rem;
+        border-radius: 6px;
+        transition: background-color 0.3s ;
+        line-height: 0;
+    }
+
+    .header__social:hover {
+        background-color: var(--clr-slate800) ;
     }
 }  
 
